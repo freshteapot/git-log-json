@@ -2,6 +2,17 @@
 - Looks for subjects starting with Change
 - Builds a json object
 
+# Usage
+- argument = path to git repo
+```sh
+go run main.go ~/git/learnalist-api
+```
+
+## Example where I pipe it thru jq
+```sh
+go run main.go ~/git/learnalist-api | jq > changelog.json
+```
+
 # Example of json output
 
 ```json
